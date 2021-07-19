@@ -1,0 +1,17 @@
+com\how2java\tmall\service\CategoryService.class
+com\how2java\tmall\util\UploadedImageFile.class
+com\how2java\tmall\service\impl\PropertyServiceImpl.class
+com\how2java\tmall\service\PropertyService.class
+com\how2java\tmall\pojo\Property.class
+com\how2java\tmall\controller\CategoryController.class
+com\how2java\tmall\pojo\PropertyExample.class
+com\how2java\tmall\pojo\PropertyExample$Criterion.class
+com\how2java\tmall\util\Page.class
+com\how2java\tmall\pojo\Category.class
+com\how2java\tmall\pojo\PropertyExample$Criteria.class
+com\how2java\tmall\controller\PropertyController.class
+com\how2java\tmall\mapper\CategoryMapper.class
+com\how2java\tmall\pojo\PropertyExample$GeneratedCriteria.class
+com\how2java\tmall\service\impl\CategoryServiceImpl.class
+com\how2java\tmall\util\ImageUtil.class
+com\how2java\tmall\mapper\PropertyMapper.class

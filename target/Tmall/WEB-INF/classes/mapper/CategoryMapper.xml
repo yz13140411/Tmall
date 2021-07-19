@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.how2java.tmall.mapper.CategoryMapper">
+    <select id="list" resultType="com.how2java.tmall.pojo.Category">
+        select * from   category order by id desc
+<!--PropertyMapper.xml-->
+    </select>
+    <select id="total" resultType="integer">
+        select count(*) from Category;
+    </select>
+    <insert id="add"  keyProperty="id" useGeneratedKeys="true" parameterType="com.how2java.tmall.pojo.Category">
+        insert into category ( name ) values (#{name})
+    </insert>
+    <delete id="delete" parameterType="java.lang.Integer">
+        delete from category where id = #{id,jdbcType=INTEGER}
+    </delete>
+
+    <select id="get" resultType="com.how2java.tmall.pojo.Category">
+        select * from category  where id= #{id}
+    </select>
+    <update id="update" parameterType="com.how2java.tmall.pojo.Category">
+        update  Category set name = #{name} where id=#{id}
+    </update>
+</mapper>
